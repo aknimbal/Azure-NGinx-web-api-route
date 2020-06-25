@@ -5,8 +5,8 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-  - port: 80
-    targetPort: 80
+  - port: 8080
+    targetPort: 8080
     protocol: TCP
     name: http
   selector:
@@ -30,4 +30,4 @@ spec:
     spec:
       containers:
       - name: api-service-container                 #change the name of container 
-        image: acrimg.azurecr.io/api-service:latest #change to your ACR image 
+        image: travelportregistry.azurecr.io/$TRAVELPORTAPI:latest #change to your ACR image 

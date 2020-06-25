@@ -8,17 +8,17 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   rules:
-  - host: web.example.com #change with actual host name
+  - host: intranet.travelport.local #change with actual host name
     http:
       paths:
       - path: /
         backend:
           serviceName: web-service
-          servicePort: 80
+          servicePort: 8080
   - host: api.example.com #change with actual host name
     http:
       paths:
       - path: /
         backend:
           serviceName: api-service
-          servicePort: 80
+          servicePort: 8080

@@ -30,4 +30,4 @@ spec:
     spec:
       containers:
       - name: web-service-container                 #change the name of container 
-        image: travelportregistry.azurecr.io/$TRAVELPORTAPI:latest #change to your ACR image 
+        image: travelportregistry.azurecr.io/azure-vote-front:latest #change to your ACR image 
